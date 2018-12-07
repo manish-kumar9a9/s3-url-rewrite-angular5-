@@ -1,0 +1,12 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <HostName>example.com</HostName>
+      <ReplaceKeyPrefixWith>#/</ReplaceKeyPrefixWith>
+      <HttpRedirectCode>302</HttpRedirectCode>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
